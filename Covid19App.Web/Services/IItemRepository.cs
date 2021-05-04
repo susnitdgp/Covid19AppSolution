@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using Covid19App.Models;
 
-namespace Covid19App.Models
+namespace Covid19App.Services
 {
     public interface IItemRepository
     {

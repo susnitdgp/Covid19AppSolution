@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using Covid19App.Web.Models;
 
-namespace Covid19App.Web.Models
+namespace Covid19App.Web.Services
 {
     public interface IFeedbackRepository
     {

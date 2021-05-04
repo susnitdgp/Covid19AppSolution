@@ -4,6 +4,7 @@ using System.Linq;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Covid19App.Models;
+using Covid19App.Services;
 
 namespace Covid19App.Controllers
 {

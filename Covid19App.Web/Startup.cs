@@ -7,8 +7,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using Covid19App.Models;
-using Covid19App.Web.Models;
+using Covid19App.Services;
+using Covid19App.Web.Services;
 
 namespace Covid19App.Web
 {

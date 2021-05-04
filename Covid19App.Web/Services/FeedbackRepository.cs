@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
+using Covid19App.Web.Models;
+using Covid19App.Web.Utility;
 using Microsoft.Extensions.Configuration;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Auth;
@@ -11,7 +13,7 @@ using Microsoft.WindowsAzure.Storage.Blob;
 using Microsoft.WindowsAzure.Storage.Queue;
 using Microsoft.WindowsAzure.Storage.Table;
 
-namespace Covid19App.Web.Models
+namespace Covid19App.Web.Services
 {
     public class FeedbackRepository : IFeedbackRepository
     {
@@ -22,7 +24,7 @@ namespace Covid19App.Web.Models
         private CloudTable table = null;
 
         private CloudBlobClient cloudBlobClient = null;
-        CloudQueueClient cloudQueueClient = null;
+        private CloudQueueClient cloudQueueClient = null;
 
         public FeedbackRepository(IConfiguration _configuration)
         {

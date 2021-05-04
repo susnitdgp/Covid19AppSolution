@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Covid19App.Web.Models
+namespace Covid19App.Web.Utility
 {
     public class FeedbackUility
     {

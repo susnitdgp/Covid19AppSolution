@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Collections.Concurrent;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Table;
-using Covid19App.Web.Models;
 using Microsoft.WindowsAzure.Storage.Auth;
 using Microsoft.Extensions.Configuration;
+using Covid19App.Models;
 
-namespace Covid19App.Models
+namespace Covid19App.Services
 {
     public class ItemRepository : IItemRepository
     {
@@ -22,7 +22,7 @@ namespace Covid19App.Models
 
             configuration = _configuration;
 
-            var result = configuration["ConnectionStrings:AzureTableStorage"];
+            //var result = configuration["ConnectionStrings:AzureTableStorage"];
 
             Add(new Item { Id = Guid.NewGuid().ToString(), Text = "1.0", Description = "First Version"});
             //Add(new Item { Id = Guid.NewGuid().ToString(), Text = "Item 2", Description = "This is an item description." });

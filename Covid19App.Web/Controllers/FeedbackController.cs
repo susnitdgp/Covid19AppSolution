@@ -4,10 +4,12 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Covid19App.Web.Models;
+using Covid19App.Web.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+// For more information on enabling MVC for empty projects,
+// visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace Covid19App.Web.Controllers
 {
